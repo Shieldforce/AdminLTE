@@ -1,0 +1,120 @@
+.login-page{
+    height: auto !important;
+    background-image: url(../../../AdminLTE/dist/img/fundo_1.jpg) !important;
+    background-size: 100% 100% !important;
+}
+
+.login-box{
+    background-color: rgba(255,255,255,0.7) !important;
+    box-shadow: 5px 5px 50px 5px white;
+    padding-top:20px;
+}
+.register-box{
+    background-color: rgba(255,255,255,0.7) !important;
+    box-shadow: 5px 5px 50px 5px white;
+    padding-top:20px;
+}
+
+
+.box{
+
+}
+.box-body{
+
+}
+.example2_wrapper{
+
+}
+.dataTables_filter{
+    width: 100% !important;
+    text-align: right;
+}
+.dataTables_filter label{
+    width: 100% !important;
+}
+.dataTables_filter label input{
+    width: 50% !important;
+}
+.dataTables_length label{
+    width: 100% !important;
+}
+.dataTables_length select{
+
+}
+
+
+
+.modal-dialog{
+    border: 1px solid white !important;
+    box-shadow: 5px 5px 50px 5px white !important;
+}
+.form-control-feedback{
+    color:#606060 !important;
+}
+
+#body_carr_success{
+    position: fixed !important;
+    width: 100% !important;
+    height: 100vh !important;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(255,255,255,1), rgba(0,0,0,0.6)) !important;
+    z-index: 999999999999999999999999999999999999 !important;
+    text-align: center !important;
+    padding-top:20% !important;
+}
+.body_carr_success_div{
+    height: 100px;
+}
+.body_carr_success_h2{
+    width: 100%;
+    text-align: center;
+    margin-top:50px;
+    color: darkgreen;
+}
+.body_carr_success_img{
+    width: 100px !important;
+    height:100px;
+    text-align: center;
+}
+
+
+#body_carr_error{
+    position: fixed !important;
+    width: 100% !important;
+    height: 100vh !important;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(255,255,255,1), rgba(0,0,0,0.6)) !important;
+    z-index: 999999999999999999999999999999999999 !important;
+    text-align: center !important;
+    padding-top:20% !important;
+}
+.body_carr_error_div{
+    height: 100px;
+}
+.body_carr_error_h2{
+    width: 100%;
+    text-align: center;
+    margin-top:50px;
+    color: darkred;
+}
+.body_carr_error_img{
+    width: 100px !important;
+    height:100px;
+    text-align: center;
+}
+.body_carr_error_h4{
+    width: 100%;
+    text-align: center;
+    margin-top:50px;
+    color: darkred;
+}
+
+.title_painel{
+    background-image: linear-gradient(to right, rgba(0,0,0,0.0) , #39cccc, rgba(0,0,0,0.0));
+    text-align: center;
+    color: white !important;
+}
+.jvectormap-label{
+    display: none !important;
+}
+#example2{
+
+}
