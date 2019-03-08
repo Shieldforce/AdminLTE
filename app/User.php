@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Models\System\Permissions\Permissions;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
@@ -16,7 +17,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password','role_id'
     ];
 
     /**
@@ -29,8 +30,33 @@ class User extends Authenticatable
     ];
     /*
      *
-     * Funções de Relacionamentos e Auxiliares
+     * Funções de Relacionamentos
      *
      *
      */
+    public function role()
+    {
+        return $this->hasOne(\App\Models\System\Roles\Roles::class, 'id', 'role_id');
+    }
+    /*
+     *
+     * Funções Auxiliares
+     *
+     *
+     */
+    public function hasPermission(Permissions $permission)
+    {
+        return $this->hasAnyRoles($permission->roles);
+    }
+    public function hasAnyRoles($roles)
+    {
+        foreach ( $roles as $role )
+        {
+            if($role['name'] == $this->role->name)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
 }

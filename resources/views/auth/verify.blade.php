@@ -3,7 +3,7 @@
 @section('container')
     <div class="login-box">
         <div class="login-logo">
-            <a href="{{ route('Home.Principal.index')}}">{{ env('APP_NAME') }}</a>
+            <a href="{{ route('Home.Principal.Show')}}">{{ env('APP_NAME') }}</a>
         </div>
         <div class="login-box-body">
             <p class="login-box-msg">Verificação!</p>

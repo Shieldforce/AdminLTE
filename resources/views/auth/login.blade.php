@@ -3,7 +3,7 @@
 @section('container')
 <div class="login-box">
     <div class="login-logo">
-        <a href="{{ route('Home.Principal.index')}}">{{ env('APP_NAME') }}</a>
+        <a href="{{ route('Home.Principal.Show')}}">{{ env('APP_NAME') }}</a>
     </div>
     <div class="login-box-body">
         <p class="login-box-msg">Entre no Painel de Controle</p>
@@ -37,7 +37,7 @@
             <p>- OU -</p>
             <a href="{{ route('password.request') }}" class="btn btn-block btn-default btn-flat"><i class="fa fa-asterisk"></i> Perdi Minha Senha</a>
             <a href="{{ route('register') }}" class="btn btn-block btn-default btn-flat"><i class="fa fa-user"></i> Registrar-me</a>
-            <a href="{{ route('Home.Principal.index') }}" class="btn btn-block btn-default btn-flat"><i class="fa fa-home"></i> Voltar a Home</a>
+            <a href="{{ route('Home.Principal.Show') }}" class="btn btn-block btn-default btn-flat"><i class="fa fa-home"></i> Voltar a Home</a>
         </div>
     </div>
 </div>

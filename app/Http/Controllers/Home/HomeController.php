@@ -13,13 +13,13 @@ class HomeController extends Controller
 
     }
     //------------------------------------------------------------------------------------------------------------------
-    public function index()
+    public function Show()
     {
         $compact =
             [
                 'title'=>'Página Principal da Home'
             ];
-        return view('Home.Principal.index', $compact);
+        return view('Home.Principal.Show', $compact);
     }
     //------------------------------------------------------------------------------------------------------------------
 

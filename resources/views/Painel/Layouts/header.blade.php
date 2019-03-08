@@ -1,6 +1,6 @@
 <header class="main-header">
     <!-- Logo -->
-    <a href="{{ route('Painel.Principal.index') }}" class="logo">
+    <a href="{{ route('Painel.Principal.Show') }}" class="logo">
         <span class="logo-mini"><b>P</b>C</span>
 
         <span class="logo-lg">{{ env('APP_NAME') }}</span>
@@ -31,13 +31,13 @@
                         <li class="user-body">
                             <div class="row">
                                 <div class="col-xs-4 text-center">
-                                    <a href="#">Vago</a>
+                                    <a href="#">Contatos</a>
                                 </div>
                                 <div class="col-xs-4 text-center">
-                                    <a href="#">Vago</a>
+                                    <a href="#">Mensagens</a>
                                 </div>
                                 <div class="col-xs-4 text-center">
-                                    <a href="#">Vago</a>
+                                    <a href="#">Alertas</a>
                                 </div>
                             </div>
                             <!-- /.row -->
@@ -51,14 +51,10 @@
                                 <a href="{{ route('logout') }}" class="btn btn-default btn-flat" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Sair-S</a>
                             </div>
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                @csrf
+                                {{ csrf_field() }}
                             </form>
                         </li>
                     </ul>
-                </li>
-                <!-- Control Sidebar Toggle Button -->
-                <li>
-                    <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
                 </li>
             </ul>
         </div>

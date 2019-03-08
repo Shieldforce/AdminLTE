@@ -3,7 +3,7 @@
 @section('container')
 <div class="register-box">
     <div class="register-logo">
-        <a href="{{ route('Home.Principal.index')}}">{{ env('APP_NAME') }}</a>
+        <a href="{{ route('Home.Principal.Show')}}">{{ env('APP_NAME') }}</a>
     </div>
     <div class="register-box-body">
         <p class="login-box-msg">Registrar-se agora!</p>
@@ -51,7 +51,7 @@
             <p>- OU -</p>
             <a href="{{ route('password.request') }}" class="btn btn-block btn-default btn-flat"><i class="fa fa-asterisk"></i> Perdi Minha Senha</a>
             <a href="{{ route('login') }}" class="btn btn-block btn-default btn-flat"><i class="fa fa-user"></i> Já possuo conta!</a>
-            <a href="{{ route('Home.Principal.index') }}" class="btn btn-block btn-default btn-flat"><i class="fa fa-home"></i> Voltar a Home</a>
+            <a href="{{ route('Home.Principal.Show') }}" class="btn btn-block btn-default btn-flat"><i class="fa fa-home"></i> Voltar a Home</a>
         </div>
     </div>
 </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ env('locale') }}">
     @includeIf('Painel.Layouts.head')
-    <body id="body" class="hold-transition skin-purple sidebar-minin">
+    <body id="body" class="hold-transition skin-purple sidebar-mini">
         <div class="wrapper">
             @includeIf('Painel.Layouts.header')
             @includeIf('Painel.Layouts.sidebarLateral')

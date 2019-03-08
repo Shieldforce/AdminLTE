@@ -8,7 +8,7 @@
                 <small>Sistema {{ env('APP_NAME') }}</small>
             </h1>
             <ol class="breadcrumb">
-                <li><a href="{{ route('Painel.Principal.index') }}"><i class="fa fa-dashboard"></i> Home</a></li>
+                <li><a href="{{ route('Painel.Principal.Show') }}"><i class="fa fa-dashboard"></i> Home</a></li>
                 <li class="active">Painel Principal</li>
             </ol>
         </section>
@@ -28,7 +28,7 @@
                             <div class="icon">
                                 <i class="fa fa-users"></i>
                             </div>
-                            <a href="{{ route('Painel.Usuarios.index') }}" class="small-box-footer">Gerenciar <i class="fa fa-arrow-circle-right"></i></a>
+                            <a href="{{ route('Painel.Usuarios.Show') }}" class="small-box-footer">Gerenciar <i class="fa fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
 
