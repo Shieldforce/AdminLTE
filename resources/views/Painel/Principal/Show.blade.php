@@ -28,7 +28,7 @@
                             <div class="icon">
                                 <i class="fa fa-users"></i>
                             </div>
-                            <a href="{{ route('Painel.Usuarios.Show') }}" class="small-box-footer">Gerenciar <i class="fa fa-arrow-circle-right"></i></a>
+                            <a href="{{ route('Painel.Usuarios.index') }}" class="small-box-footer">Gerenciar <i class="fa fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
 

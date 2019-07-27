@@ -14,16 +14,13 @@ Auth::routes();
 
 //======================================================================================================================
 Route::group(['namespace' => 'Painel'], function (){
+
     //Painel de Controle
     Route::get('/Painel', 'PainelController@Show')->name('Painel.Principal.Show');
-    //Usuários Rota Show------------------------------------------------------------------------------------------------
-    Route::get('/Painel/Usuarios', 'UsuariosController@Show')->name('Painel.Usuarios.Show');
-    //Criação
-    Route::get('/Painel/Create-Usuarios', 'UsuariosController@Create')->name('Painel.Usuarios.Create');
-    Route::post('/Painel/Store-Usuarios', 'UsuariosController@Store')->name('Painel.Usuarios.Store');
-    //Edição
-    Route::get('/Painel/Edit-Usuarios', 'UsuariosController@Edit')->name('Painel.Usuarios.Edit');
-    Route::post('/Painel/Update-Usuarios', 'UsuariosController@Update')->name('Painel.Usuarios.Update');
-    //Exclusão
-    Route::get('/Painel/Destroy-Usuarios', 'UsuariosController@Destroy')->name('Painel.Usuarios.Destroy');
+
+    //Usuários Rota Index-----------------------------------------------------------------------------------------------
+    Route::get('/Painel/Usuarios', 'Usuarios\UsuariosController@index')->name('Painel.Usuarios.index');
+    Route::get('/Painel/Usuarios/create', 'Usuarios\UsuariosController@create')->name('Painel.Usuarios.create');
+    Route::get('/Painel/Usuarios/store', 'Usuarios\UsuariosController@store')->name('Painel.Usuarios.store');
+
 });
